@@ -1,0 +1,8 @@
+apply plugin: 'java'
+if (GradleVersion.current().compareTo(GradleVersion.version('2.5')) < 0) {
+    throw new GradleException("Unsupported Gradle version ${GradleVersion.current()} in ${project.gradle.gradleHomeDir}, required: >=2.5")
+}
+
+println "-----------------------------"
+println "Module loaded with ${GradleVersion.current()}"
+println "-----------------------------"
