@@ -1,6 +1,6 @@
 apply plugin: 'java'
-if (GradleVersion.current().compareTo(GradleVersion.version('2.5')) < 0) {
-    throw new GradleException("Unsupported Gradle version ${GradleVersion.current()} in ${project.gradle.gradleHomeDir}, required: >=2.5")
+if (GradleVersion.current().compareTo(GradleVersion.version('2.9')) < 0) {
+    throw new GradleException("Unsupported Gradle version ${GradleVersion.current()} in ${project.gradle.gradleHomeDir}, required: >=2.9")
 }
 
 println "-----------------------------"
